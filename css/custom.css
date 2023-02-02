@@ -1,0 +1,17 @@
+.link-small {
+    font-size: 1rem;
+}
+h1.firstheading {
+    font-size: 2em !important;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-left {
+    margin-left: 1em;
+    text-align: left;
+}

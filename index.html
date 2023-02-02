@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Accessibility : How to have the most impact with the less effort - Heisendev</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/serif.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1 class="firstheading">Accessibility : How to have the most impact with the less effort.</h1></section>
+				<section>
+					<h1 class="firstheading">Nice to meet you 👋🏻</h1>
+					<div class="flex">
+						<img src="assets/me.jpg" alt="Picture of Me in black and white" width="200"/>
+						<div class="align-left">
+							Michael Hermet / @heisendev<br>
+							Principal Engineer @ AVIV <br>
+							Accessibility Advocate
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="fragment shrink" data-fragment-index="1">
+						<h2>Accessibility quick intro</h2>
+						<span class="">/əksɛsɪˈbɪlɪti/</span>
+					</div>
+					<div class="fragment" data-fragment-index="1">
+						<p>It is the practice of ensuring that we create products that can be used by anyone regardless of their capabilities, visual, auditory, motor or cognitive</p>
+					</div>
+					<aside class="notes">
+						Faire de l'accessibilité c'est s'assurer que nous créons des produits qui peuvent etre utilisé par n'importe qui quelque soit soit ses capacités visuelle, auditif, moteur ou cognitif. 
+						On parle bien de capacité qui peuvent etre du a un handicap permanent, une maladie ou condition temporaire ou encore une situation.
+					</aside>
+				</section>
+				<section>
+					<h2><span class="fragment">WCAG</span> <span class="fragment">kezako ?</span></h2>
+					<p class="fragment">The WCAG (Web Content Accessibility Guidelines) is the W3C standards listing criterias with the P.O.U.R. principles</p>
+					<aside class="notes">Perceivable (perceptible), Operable, Understandable, Robust</aside>
+				</section>
+				<section>How many criterias are in the WCAG 2.1?</section>
+				<section>
+					<h1>78 criterias</h1>
+					<p>
+ 						spread through 3 levels A, AA and AAA. <br>
+						50 criterias are required to meet the AA levels.
+					</p>
+				</section>
+				<section>These 50 criterias are the ones selected on the reference European standard for establishing the level of legal requirement in terms of digital accessibility.</section>
+				<section>
+					<h2>It seems a lot right ?</h2>
+					<p class="fragment">What if I tell you that you can almost reach the AA level (quite) easily ?</p>
+				</section>
+				<section data-background-image="assets/audit.jpg" data-background-size="70%"></section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Contrast Minimum - WCAG SC 1.4.3</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Name, Role Value - WCAG SC 4.1.2</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>For all user interface components, the name and role can be programmatically determined</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html">https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html</a>
+					</div>
+					<aside class="notes">
+						nom et role des élément dont les valeurs sont comprises par les machines ou softwares sans ambiguité.
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">info and relationships - WCAG SC 1.3.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html</a>
+					</div>
+					<aside class="notes">
+						la structure de l'information visuelle doit etre coherente dans le code. un text qui se trouve au dessus d'un input pour faire office visuellement de label doit etre codé tel quel également. 
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Parsing - WCAG SC 4.1.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">https://www.w3.org/WAI/WCAG21/Understanding/parsing.html</a>
+					</div>
+					<aside class="notes">
+						Le code ne doit pas avoir d'erreur de semantique. les tags ouverts sont bien fermés et respecte leur hierarchie (exemple avec composants mal imbriqué)
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Non-text content - WCAG SC 1.1.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for situations like decoration or captcha.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html">https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Focus order - WCAG SC 2.4.3</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html">https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Keyboard - WCAG SC 2.1.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html">https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Focus visible - WCAG SC 2.4.7</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html">https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Non-text contrast  - WCAG SC 1.4.11</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>The visual presentation of 'User Interface Components' and 'Graphical Objects' have a contrast ratio of at least 3:1 against adjacent color(s)</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html</a>
+					</div>
+					<aside class="notes">
+						ex: contrast sur boutons states 
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Use of color - WCAG SC 1.4.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html">https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Meaningful sequence - WCAG SC 1.3.2</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html">https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">labels or instructions - WCAG SC 3.3.2</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>Labels or instructions are provided when content requires user input.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Bypass blocks - WCAG SC 2.4.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Page titled - WCAG SC 2.4.2</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>Web pages have titles that describe topic or purpose.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html">https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2 class="fragment shrink" data-fragment-index="1">Language of page - WCAG SC 3.1.1</h2>
+					<div class="fragment" data-fragment-index="1">
+						<p><q>The default human language of each Web page can be programmatically determined.</q></p>
+						<a class="link-small" href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html</a>
+					</div>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h2>How to ?</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Tooling : Axe devtool, WCAG contrast checker plugin, A11y Color blindness empathy test</li>
+						<li class="fragment" data-fragment-index="2">Get yourself educated Deque University, Access42</li>
+						<li class="fragment" data-fragment-index="3">Read the entire WCAG spec: gl;hf;</li>
+					</ul>
+				</section>
+				<section><h1>Thank you!</h1></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
